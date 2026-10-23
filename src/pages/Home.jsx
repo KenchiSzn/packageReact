@@ -1,5 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import cargos from "../assets/cargoes.jpg"
+import air from "../assets/air.jpg"
+import ocean from "../assets/ocean.jpg"
+import truck from "../assets/truck.jpg"
+import warehouse from "../assets/warehouse.jpg"
+import customs from "../assets/customs.jpg"
 
 const Home = () => {
   const [trackingId, setTrackingId] = useState("");
@@ -207,7 +213,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/ocean.jpg" alt="Ocean Freight" />
+                  <img src={ocean} alt="Ocean Freight" />
                   <div className="service-icon">
                     <i className="bi bi-ship-fill"></i>
                   </div>
@@ -230,7 +236,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/air.jpg" alt="Air Cargo" />
+                  <img src={air} alt="Air Cargo" />
                   <div className="service-icon">
                     <i className="bi bi-airplane-fill"></i>
                   </div>
@@ -252,7 +258,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/truck.jpg" alt="Land Transport" />
+                  <img src={warehouse} alt="Land Transport" />
                   <div className="service-icon">
                     <i className="bi bi-truck"></i>
                   </div>
@@ -275,13 +281,13 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/warehouse.jpg" alt="Warehouse" />
+                  <img src={warehouse} alt="Warehouse" />
                   <div className="service-icon">
                     <i className="bi bi-building-fill"></i>
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="mb-2 fw-bold ">Warehousing</h3>
+                  <h3 className="mb-2 fw-bold ">WAREHOUSING</h3>
                   <p className="mb-4 lead fs-5">
                     State-of-the-art storage facilities with inventory
                     management and distribution services.
@@ -298,7 +304,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/customs.jpg" alt="Air Cargo" />
+                  <img src={customs} alt="Air Cargo" />
                   <div className="service-icon">
                     <i className="bi bi-shield-fill"></i>
                   </div>
@@ -321,7 +327,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="service-card h-100">
                 <div className="service-image">
-                  <img src="./src/assets/cargoes.jpg" alt="Air Cargo" />
+                  <img src={cargos} alt="Air Cargo" />
                   <div className="service-icon">
                     <i className="bi bi-box-fill"></i>
                   </div>
